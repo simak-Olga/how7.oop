@@ -13,6 +13,6 @@ class Calculator:
 
         def button_eq(self, char_, x_, y_):
         self.b = Button(
-            self.container, text=char_, width=self.button_width,
+            self.container, text= char_, width=self.button_width,
             height=self.button_height, font=self.entry_font)
-        self.b.grid(row=x_, column=y_, sticky='we', columnspan=2)
+        self.b.grid(row= x_, column= y_, sticky='we', columnspan=2)

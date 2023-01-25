@@ -1,6 +1,6 @@
 
 class Console_View(View):
-   // """Класс описывает взаимодействие с пользователем'''
+    """Класс описывает взаимодействие с пользователем'''
 
     def get_variant(self, title):
         
@@ -18,7 +18,7 @@ class Console_View(View):
 
 
     def get_value(self, title):
-       // """Метод для расчёта float или complex.
+      """Метод для расчёта float или complex.
         Возвращает введенное число в формате float или complex"""
 
         check_input = False
@@ -42,7 +42,7 @@ class Console_View(View):
 
 
     def view_data(self, data, title):
-        //"""Метод выдает пользователю результат вычислений или сообщение об ошибке"""
+        """Метод выдает пользователю результат вычислений или сообщение об ошибке"""
 
         print('\nПолучен результат:')
         print(f'{title} = {data}')
@@ -50,7 +50,7 @@ class Console_View(View):
 
 
     def view_logger(self, fl):
-        //"""Метод выдает пользователю в консоль для просмотра записи лог-файла"""
+        """Метод выдает пользователю в консоль для просмотра записи лог-файла"""
 
         Logger.view_log_logger(fl)
         with open(fl, 'r', encoding="utf8") as file:

@@ -1,15 +1,15 @@
 class Calculator:
-    def add(self, a, b):
-        return a+b
+    def add(self, x, y):
+        return x+b
     
-    def subtract(self, a, b):
-        return a-b
+    def subtract(self, x, y):
+        return x-y
         
-    def multiply(self, a, b):
-        return a*b
+    def multiply(self, x, y):
+        return x*y
 
-    def divide(self, a, b):
-        return a/b
+    def divide(self,x, y):
+        return x/y
 
 #create a calculator object
 my_cl = Calculator()
@@ -32,17 +32,17 @@ while True:
             break
         
         #If not then ask fo the input and call appropiate methods        
-        a = int(input("Enter first number: "))
-        b = int(input("Enter second number: "))
+        x = int(input("Enter first number: "))
+        y = int(input("Enter second number: "))
         
         if(ch == 1):
-            print(a, "+", b, "=", my_cl.add(a, b))
+            print(x, "+", y, "=", my_cl.add(x, y))
         elif(ch == 2):
-            print(a, "-", b, "=", my_cl.subtract(a, b))
+            print(x, "-", y, "=", my_cl.subtract(x, y))
         elif(ch == 3):
-            print(a, "*", b, "=", my_cl.multiply(a, b))
+            print(x, "*", y, "=", my_cl.multiply(x, y))
         elif(ch == 4):
-            print(a, "/", b, "=", my_cl.divide(a, b))
+            print(x, "/", y, "=", my_cl.divide(x, y))
     
     else:
         print("Invalid Input")
